@@ -11,6 +11,7 @@ import org.pa.library.model.Book;
 @XmlRootElement
 public class Library {
 
+	/*
 	public static final String LIBRARY_FILE = "Library.xml"; //TODO AS move it to the LibrarySystem and put here a field storing a file name from which library was read.
 	
 	@XmlElement
@@ -22,5 +23,5 @@ public class Library {
 			
 	public List<Book> getBooks() {
 		return books;
-	}
+	}*/
 }

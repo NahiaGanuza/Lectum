@@ -11,6 +11,7 @@ import org.pa.library.ui.console.viewer.functionViewers.BookListViewer;
 import org.pa.library.ui.console.viewer.functionViewers.BookManageViewer;
 
 public class AddCoordinator implements Coordinator{
+    /*
     private AddCtrl addCtrl                   = new AddCtrl();
     private BookManageViewer bookManageViewer = new BookManageViewer();
     private BookListViewer bookListViewer     = new BookListViewer(); 
@@ -41,6 +42,7 @@ public class AddCoordinator implements Coordinator{
             bookListViewer.listNewBooks(newBooks);
             bookManageViewer.answerBookAddSuccess();}
     }
+    */
 }
         
     

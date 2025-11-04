@@ -9,7 +9,9 @@ import org.pa.library.ui.console.viewer.functionViewers.BookListViewer;
 import org.pa.library.ui.console.viewer.functionViewers.BookManageViewer;
 import org.pa.library.ui.console.viewer.functionViewers.BookManageViewer;
 import org.pa.library.ui.console.viewer.functionViewers.SearchMenuViewer;
+    /*
 public class SearchCtrl {
+
     private SearchOperation searchOperation   = new SearchOperation();
     private BookManageViewer bookManageViewer = new BookManageViewer();
     private SearchMenuViewer searchMenuViewer = new SearchMenuViewer();   
@@ -77,5 +79,8 @@ public class SearchCtrl {
             }
            else bookListViewer.listFoundBooks(foundBooks);
             
-        }   
+        }
+
+
 }
+*/

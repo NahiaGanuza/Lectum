@@ -11,8 +11,9 @@ import org.pa.library.ui.console.viewer.functionViewers.AuthorModifyViewer;
 import org.pa.library.ui.console.viewer.modelViewers.AuthorViewer;
 import org.pa.library.ui.console.viewer.functionViewers.BookManageViewer;
 import org.pa.library.ui.console.viewer.functionViewers.BookToModifyViewer;
-
+/*
 public class ModifyCtrl {// problem with library = null
+    /*
     public ModifyCtrl(Library library) {
         this.library = library;
     }
@@ -149,5 +150,5 @@ public class ModifyCtrl {// problem with library = null
 
         return modifiedBook;
     }
-
+*/
 }

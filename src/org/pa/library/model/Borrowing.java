@@ -3,6 +3,7 @@ package org.pa.library.model;
 import java.util.Date;
 
 public class Borrowing {
+	/*
 	private Date dateBorrow;
 	private Date dateReturn;
 	private Reader reader;
@@ -32,6 +33,7 @@ public class Borrowing {
 	public void setBook(Book book) {
 		this.book = book;
 	}
+	*/
 	
 
 }

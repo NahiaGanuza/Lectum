@@ -8,6 +8,7 @@ import org.pa.library.ui.console.viewer.functionViewers.BookManageViewer;
 import org.pa.library.ui.console.viewer.functionViewers.BookToModifyViewer;
 
 public class ModifyCoordinator implements Coordinator{
+    /*
     private Library library;
   
     private BookToModifyViewer bookToModifyViewer  = new BookToModifyViewer();
@@ -66,5 +67,5 @@ public class ModifyCoordinator implements Coordinator{
             moreBookModify = false;        
         bookToModifyViewer.showModifiedBook(modifiedBook);
 }
-    }
+    }*/
 }

@@ -12,6 +12,7 @@ import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 
 public class ConsoleHelper {
+	/*
 	
 	public static void writeLn(String text) {
 		System.out.println(text);
@@ -31,5 +32,6 @@ public class ConsoleHelper {
 			return null;
 		}
 	}
+	*/
 	
 }

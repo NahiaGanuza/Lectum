@@ -12,8 +12,9 @@ import org.pa.library.ui.console.viewer.modelViewers.AuthorViewer;
 import org.pa.library.ui.console.viewer.modelViewers.LanguageViewer;
 import org.pa.library.ui.console.viewer.modelViewers.TitleViewer;
 import org.pa.library.ui.console.viewer.modelViewers.YearOfIssueViewer;
-
+/*
 public class AddCtrl {
+    /*
     private AuthorViewer authorViewer = new AuthorViewer();
     private TitleViewer titleViewer = new TitleViewer();
     private LanguageViewer languageViewer = new LanguageViewer();
@@ -56,5 +57,5 @@ public class AddCtrl {
             if (answer.equals("no"))
                 moreAuthor = false;
         }
-    }
+    } */
 }

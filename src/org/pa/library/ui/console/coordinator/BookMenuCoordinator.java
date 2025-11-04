@@ -5,7 +5,8 @@ import org.pa.library.model.Library;
 import org.pa.library.ui.console.ctrl.BookMenuCtrl;
 import org.pa.library.ui.console.viewer.BookMenuViewer;
 
-public class BookMenuCoordinator {  
+public class BookMenuCoordinator {
+    /*
     private BookMenuViewer mainMenuViewer = new BookMenuViewer(); 
     private BookMenuCtrl   mainMenuCtrl   = new BookMenuCtrl();    
    private Library library = readFromXML();
@@ -41,5 +42,5 @@ public class BookMenuCoordinator {
             
            
         }
-    }
+    }*/
 }

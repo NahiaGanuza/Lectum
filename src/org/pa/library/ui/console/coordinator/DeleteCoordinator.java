@@ -7,6 +7,7 @@ import org.pa.library.ui.console.viewer.functionViewers.BookManageViewer;
 import org.pa.library.ui.console.viewer.functionViewers.DeleteViewer;
 
 public class DeleteCoordinator implements Coordinator{
+    /*
    // what's the difference between putting initialization here and in constructor?
     private DeleteViewer deleteViewer         = new DeleteViewer();
     private DeleteCtrl deleteCtrl             = new DeleteCtrl();
@@ -34,5 +35,5 @@ public void execute(){
 private boolean validateIndexDelete(int index) {
     boolean indexCorrect = index < library.getBooks().size() && index >= 0;
     return indexCorrect;
-}
+}*/
 }

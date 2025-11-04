@@ -12,8 +12,9 @@ import org.pa.library.ui.console.viewer.modelViewers.LanguageViewer;
 import org.pa.library.ui.console.viewer.functionViewers.SearchMenuViewer;
 import org.pa.library.ui.console.viewer.modelViewers.TitleViewer;
 import org.pa.library.ui.console.viewer.modelViewers.YearOfIssueViewer;
-
+/*
 public class BookRequest {
+    /*
     private SearchMenuViewer searchMenuViewer   = new SearchMenuViewer();
     private TitleViewer titleViewer             = new TitleViewer();
     private TitleCtrl titleCtrl                 = new TitleCtrl();
@@ -63,6 +64,6 @@ public class BookRequest {
             }
         }
         return request;
-    }
+    }*/
 
 }

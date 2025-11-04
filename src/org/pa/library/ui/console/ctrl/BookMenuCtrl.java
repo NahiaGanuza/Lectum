@@ -3,7 +3,8 @@ package org.pa.library.ui.console.ctrl;
 import static org.pa.library.ui.console.helper.ConsoleHelper.readLineFromConsole;
 import org.pa.library.ui.console.viewer.BookMenuViewer;
 
-public class BookMenuCtrl { 
+public class BookMenuCtrl {
+    /*
 
     public String readUserChoice(BookMenuViewer bookMenuViewer) {
         String userChoice = readLineFromConsole();
@@ -20,5 +21,5 @@ public class BookMenuCtrl {
         || userChoice.equals("5") || userChoice.equals("6");
         return isCorrect;
     }
-   
+   */
 }
