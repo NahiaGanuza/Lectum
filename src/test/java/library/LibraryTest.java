@@ -1,24 +1,69 @@
 package library;
 
+import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
-/*
   @Test
-  void libraryIsCreatedTest() {
-    Library library = new Library();
+  void addBook() {
+    Library lib = new Library(new ArrayList<>(), new ArrayList<>());
 
-    assertNotNull(library);
+    Author a = new Author(1, "Sarah", "J. Maas", "USA");
+    Book b = new Book(1, "Throne of Glass", "ISBN-A", a, true);
+
+    lib.addBook(b);
+
+    assertEquals(1, lib.getBooks().size());
+    assertSame(b, lib.getBooks().get(0));
   }
 
   @Test
-  void canAddBookToLibrary() {
-    Library library = new Library();
-    Book book = new Book(1, "Comeras Flores", "001", new Author(1, "Lucia", "Solla"), true);
+  void registerUser() {
+    Library lib = new Library(new ArrayList<>(), new ArrayList<>());
 
-    library.addBook(book);
+    User u = new User(1, "nahia", "mail@test.com");
+    lib.registerUser(u);
 
-    assertNotNull(library.getBooks());
-    assertEquals(1,library.getBooks().size());
-    assertTrue(library.getBooks().contains(book));
-  }*/
+    assertEquals(1, lib.getUsers().size());
+    assertSame(u, lib.getUsers().get(0));
+  }
+
+  @Test
+  void lendBookIfAvailable() {
+    Library lib = new Library(new ArrayList<>(), new ArrayList<>());
+
+    Author a = new Author(1, "Sarah", "J. Maas", "USA");
+    Book b = new Book(1, "A", "ISBN-A", a, true);
+
+    lib.lendBook(b);
+
+    assertFalse(b.getAvailable());
+  }
+
+  @Test
+  void lendBookIfNotAvailable() {
+    Library lib = new Library(new ArrayList<>(), new ArrayList<>());
+
+    Author a = new Author(1, "Sarah", "J. Maas", "USA");
+    Book b = new Book(2, "B", "ISBN-B", a, false);
+
+    lib.lendBook(b);
+
+    assertFalse(b.getAvailable());
+  }
+
+  @Test
+  void returnBook() {
+    Library lib = new Library(new ArrayList<>(), new ArrayList<>());
+
+    Author a = new Author(1, "Sarah", "J. Maas", "USA");
+    Book b = new Book(2, "B", "ISBN-B", a, false);
+
+    lib.returnBook(b);
+
+    assertTrue(b.getAvailable());
+  }
 }

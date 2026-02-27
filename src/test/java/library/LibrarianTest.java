@@ -2,32 +2,35 @@ package library;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibrarianTest {
-
-  User user = new User(01, "nahia", "nahiagi00@gmail.com");
-  Author author = new Author(01, "Paloma", "Sanchez", "ES");
-  Book book = new Book(01, "La sospecha de Sofia", "01", author, true);
-
   @Test
-  void librarianIsCreatedTest() {
-    Librarian librarian = new Librarian(01, "nahia1", "morning");
-    assertNotNull(librarian);
-  }
+  void registerBook_delegaEnLibraryAddBook() {
+    Library lib = new Library(new ArrayList<>(), new ArrayList<>());
+    Librarian l = new Librarian(1, "admin", "morning");
 
+    Author a = new Author(1, "Sarah", "J. Maas", "USA");
+    Book b = new Book(1, "A", "ISBN", a, true);
 
+    l.registerBook(lib, b);
 
-  @Test
-  void librarianHasUsername() {
-    Librarian librarian = new Librarian(01, "nahia1", "morning");
-    assertNotNull(librarian.getUsername());
+    assertEquals(1, lib.getBooks().size());
+    assertSame(b, lib.getBooks().get(0));
   }
 
   @Test
-  void librarianHasShift() {
-    Librarian librarian = new Librarian(01, "nahia1", "morning");
-    assertNotNull(librarian.getShift());
-  }
+  void lendBook_delegaEnLibraryLendBook() {
+    Library lib = new Library(new ArrayList<>(), new ArrayList<>());
+    Librarian l = new Librarian(1, "admin", "morning");
 
+    Author a = new Author(1, "Sarah", "J. Maas", "USA");
+    Book b = new Book(1, "A", "ISBN", a, true);
+
+    l.lendBook(lib, b);
+
+    assertFalse(b.getAvailable());
+  }
 }

@@ -90,4 +90,8 @@ public class Author {
   public String getNationality() {
     return this.nationality;
   }
+
+  public String getFullName() {
+    return this.name + " " + this.surname;
+  }
 }

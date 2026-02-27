@@ -1,8 +1,9 @@
 package library;
 
+import java.io.Serializable;
 import java.util.List;
 import java.util.logging.Logger;
-public class Library {
+public class Library implements Serializable {
   private static Logger logger = Logger.getLogger(Library.class.getName());
   private List<Book> books;
   private List<User> users;
@@ -40,4 +41,7 @@ public class Library {
     return this.books;
   }
 
+  public List<User> getUsers() {
+    return users;
+  }
 }
