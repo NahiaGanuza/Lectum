@@ -1,11 +1,33 @@
-#eclipse generated configs
-.classpath
-.project
-.settings
+# ======================
+# Maven
+# ======================
+target/
 
-#backup files
+# ======================
+# Compiled files
+# ======================
+*.class
+
+# ======================
+# IntelliJ IDEA
+# ======================
+.idea/
+*.iml
+*.iws
+out/
+
+# ======================
+# Logs
+# ======================
+*.log
+
+# ======================
+# OS files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Backup files
+# ======================
 *~
-
-bin
-doc
-lib
